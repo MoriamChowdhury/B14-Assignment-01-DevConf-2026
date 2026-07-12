@@ -12,7 +12,7 @@ img{
     display:flex;
     align-items:center;
     justify-content:space-between;
-    padding:18px 40px;
+    padding:18px 60px;
     border-bottom:1px solid #e6e8ee;
   }
   .brand{
@@ -138,3 +138,80 @@ img{
   font-size:15px;
   margin-top:220px; 
 }
+/* hero section end */
+
+
+/* speakers section start */
+.speakers{
+  padding:96px 0;
+}
+
+.speakers-container{
+  max-width:1120px;
+  margin:0 auto;
+  padding:0 24px;
+}
+
+.section-title{
+  text-align:center;
+  font-size:38px;
+  font-weight:700;
+  letter-spacing:-0.5px;
+  color:#0D1B2A;
+  margin-bottom:56px;
+}
+
+.speakers-grid{
+  display:grid;
+  grid-template-columns:1fr 1fr;
+  gap:28px;
+}
+
+.speaker-card{
+  border:1px solid #e6e8ee;
+  border-radius:14px;
+  overflow:hidden;
+  background:#FFFFFF;
+  transition:transform .2s ease, box-shadow .2s ease;
+}
+
+
+
+.speaker-card img{
+  width:100%;
+  height:320px;
+  object-fit:cover;
+  display:block;
+}
+
+.speaker-info{
+  padding:24px;
+  display:flex;
+  flex-direction:column;
+  gap:8px;
+}
+
+.track-tag{
+  display:block;
+  font-size:11.5px;
+  font-weight:700;
+  letter-spacing:.8px;
+  text-transform:uppercase;
+  color:#2563EB;
+  margin:0;
+}
+
+.speaker-info h3{
+  font-size:19px;
+  font-weight:700;
+  color:#0D1B2A;
+  margin: 0;
+}
+
+.speaker-info p{
+  color:#575757;
+  font-size:14px;
+  margin: 0;
+}
+
+/* speakers section end */
