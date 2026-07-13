@@ -380,3 +380,38 @@ img{
 }
 
 /* secure section spot end */
+
+/* footer start */
+.footer{
+  background:#0D1330;
+}
+
+.footer-container{
+  max-width:1400px;
+  margin:0 auto;
+  min-height:145px;
+  padding:0 60px;
+  display:flex;
+  align-items:center;
+  justify-content:space-between;
+}
+
+.footer-copyright{
+  color:#FFFFFF;
+  font-size:14px;
+}
+
+.footer-links{
+  display:flex;
+  gap:32px;
+}
+
+.footer-links a{
+  color:#FFFFFF;
+  font-size:14px;
+  text-decoration:none;
+  transition:color .15s ease;
+}
+
+
+/* footer end */
