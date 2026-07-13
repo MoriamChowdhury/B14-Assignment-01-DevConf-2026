@@ -381,6 +381,262 @@ img{
 
 /* secure section spot end */
 
+/* bento section start */
+.bento-section{
+  position:relative;
+  background:#0a0e1c;
+  padding:110px 0;
+  overflow:hidden;
+}
+
+.bento-bg{
+  position:absolute;
+  inset:0;
+  z-index:0;
+}
+
+.blob{
+  position:absolute;
+  border-radius:50%;
+  filter:blur(90px);
+  opacity:0.35;
+}
+
+.blob-1{
+  width:420px;
+  height:420px;
+  background:#2563EB;
+  top:-100px;
+  left:-100px;
+}
+
+.blob-2{
+  width:380px;
+  height:380px;
+  background:#7c3aed;
+  bottom:-120px;
+  right:-80px;
+}
+
+.blob-3{
+  width:280px;
+  height:280px;
+  background:#0ea5e9;
+  top:40%;
+  left:45%;
+  opacity:0.2;
+}
+
+.bento-container{
+  position:relative;
+  z-index:1;
+  max-width:1120px;
+  margin:0 auto;
+  padding:0 60px;
+}
+
+.bento-head{
+  text-align:center;
+  max-width:560px;
+  margin:0 auto 56px;
+}
+
+.bento-eyebrow{
+  display:inline-block;
+  font-size:12.5px;
+  font-weight:700;
+  letter-spacing:1.2px;
+  text-transform:uppercase;
+  color:#8fa0ff;
+  margin-bottom:14px;
+}
+
+.bento-head h2{
+  font-size:38px;
+  font-weight:700;
+  letter-spacing:-0.5px;
+  color:#fff;
+  margin-bottom:14px;
+}
+
+.bento-head p{
+  color:rgba(255,255,255,.6);
+  font-size:15.5px;
+  line-height:1.6;
+}
+
+/* the grid */
+.bento-grid{
+  display:grid;
+  grid-template-columns:repeat(4, 1fr);
+  grid-template-rows:repeat(2, auto);
+  gap:20px;
+}
+
+.bento-card{
+  position:relative;
+  background:rgba(255,255,255,0.045);
+  border:1px solid rgba(255,255,255,0.09);
+  border-radius:20px;
+  padding:30px;
+  backdrop-filter:blur(20px);
+  -webkit-backdrop-filter:blur(20px);
+  transition:transform .3s ease, border-color .3s ease, background .3s ease;
+  overflow:hidden;
+}
+
+.bento-card:hover{
+  transform:translateY(-6px);
+  border-color:rgba(143,160,255,.4);
+  background:rgba(255,255,255,0.07);
+}
+
+.card-icon{
+  font-size:26px;
+  display:inline-block;
+  margin-bottom:18px;
+}
+
+.card-tag{
+  position:absolute;
+  top:30px;
+  right:30px;
+  font-size:11.5px;
+  font-weight:600;
+  letter-spacing:.4px;
+  color:rgba(255,255,255,.5);
+  background:rgba(255,255,255,0.06);
+  border:1px solid rgba(255,255,255,0.1);
+  padding:5px 12px;
+  border-radius:999px;
+}
+
+.bento-card h3{
+  font-size:21px;
+  font-weight:700;
+  color:#fff;
+  margin-bottom:10px;
+}
+
+.bento-card p{
+  font-size:14px;
+  color:rgba(255,255,255,.62);
+  line-height:1.65;
+}
+
+.card-link{
+  display:inline-block;
+  margin-top:18px;
+  font-size:13.5px;
+  font-weight:600;
+  color:#8fa0ff;
+}
+
+/* grid placement */
+.card-large{
+  grid-column:span 2;
+  grid-row:span 2;
+  background:linear-gradient(160deg, rgba(37,99,235,.18), rgba(255,255,255,0.03));
+}
+
+.card-large h3{
+  font-size:28px;
+  max-width:380px;
+}
+
+.card-large p{
+  max-width:380px;
+  font-size:15px;
+}
+
+.card-glow{
+  position:absolute;
+  width:260px;
+  height:260px;
+  background:#2563EB;
+  border-radius:50%;
+  filter:blur(80px);
+  opacity:0.3;
+  bottom:-100px;
+  right:-60px;
+  pointer-events:none;
+}
+
+.card-medium{
+  grid-column:span 2;
+  grid-row:span 1;
+}
+
+.card-stat{
+  grid-column:span 1;
+  grid-row:span 1;
+  display:flex;
+  flex-direction:column;
+  justify-content:center;
+  align-items:flex-start;
+  background:rgba(255,255,255,0.045);
+}
+
+.card-stat.dark{
+  background:#131a3c;
+  border-color:rgba(143,160,255,.2);
+}
+
+.stat-number{
+  font-size:34px;
+  font-weight:700;
+  color:#fff;
+  letter-spacing:-1px;
+}
+
+.stat-label{
+  font-size:13px;
+  color:rgba(255,255,255,.55);
+  margin-top:6px;
+}
+
+.card-wide{
+  grid-column:span 4;
+  grid-row:span 1;
+  display:flex;
+  align-items:center;
+  gap:24px;
+  justify-content:space-between;
+}
+
+.card-wide .card-icon{
+  font-size:32px;
+  margin-bottom:0;
+}
+
+.wide-text{
+  flex:1;
+  display:flex;
+  align-items:center;
+  gap:24px;
+}
+
+.wide-text h3{
+  margin-bottom:0;
+  min-width:160px;
+}
+
+.wide-text p{
+  margin:0;
+}
+
+.card-wide .card-link{
+  margin-top:0;
+  white-space:nowrap;
+}
+
+
+
+
+/* bento section end */
+
+
+
 /* footer start */
 .footer{
   background:#0D1330;
