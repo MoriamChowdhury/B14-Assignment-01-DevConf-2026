@@ -2,6 +2,7 @@
     padding: 0;
     margin: 0;
      font-family: "Inter", sans-serif;
+     box-sizing:border-box;
 }
 img{
     max-width: 100%;
@@ -215,3 +216,167 @@ img{
 }
 
 /* speakers section end */
+
+/* secure the spot start  */
+
+.pricing{
+  background:#F8F9FB;
+  padding:96px 0;
+}
+
+.pricing-container{
+  max-width:1120px;
+  margin:0 auto;
+  padding:0 24px;
+  text-align:center;
+}
+
+.pricing-subtitle{
+  color:#575757;
+  font-size:15.5px;
+  margin-top:12px;
+  margin-bottom:56px;
+}
+
+.pricing-grid{
+  display:grid;
+  grid-template-columns:repeat(3,1fr);
+  gap:24px;
+  align-items:stretch;
+  text-align:left;
+}
+
+.price-card{
+  background:#fff;
+ border:1px solid #E5E7EB;
+  border-radius:12px;
+  padding:32px;
+  display:flex;
+  flex-direction:column;
+  gap:20px;
+}
+
+.price-card.featured{
+  background:#0D1330;
+  color:#fff;
+   border:1px solid #0D1330;   
+  box-shadow:0 30px 50px -25px rgba(13,19,48,.55);
+}
+
+.plan-label{
+  font-size:12.5px;
+  font-weight:700;
+  text-transform:uppercase;
+  color:#888888;
+  margin:0;
+}
+
+.price-card.featured .plan-label{
+  color:#9aa6e0;
+}
+
+.price{
+  font-size:34px;
+  font-weight:700;
+  letter-spacing:-1px;
+  color:#0D1B2A;
+  margin:0;
+  padding:0 8px 0 0;
+}
+
+.price-header{
+  display:flex;
+  flex-direction:column;
+  gap:0;
+}
+
+.price-card.featured .price{
+  color:#fff;
+}
+
+.price-sub{
+  font-size:13px;
+  color:#575757;
+  margin:0;
+}
+
+.price-card.featured .price-sub{
+  color:rgba(255,255,255,.6);
+}
+
+.feature-list{
+  border-top:1px solid #E5E7EB;
+  padding-top:20px;
+  list-style:none;
+  display:flex;
+  flex-direction:column;
+  gap:10px;
+ 
+  flex:1;
+}
+.price-card.featured .feature-list{
+  border-top-color:rgba(255,255,255,.14);
+}
+
+.feature-list li{
+  font-size:14px;
+  color:#333333;
+  display:flex;
+  align-items:flex-start;
+  gap:8px;
+  padding:0;
+}
+
+.feature-list li::before{
+  content:"•";
+  color:#2563EB;
+  font-weight:700;
+  flex-shrink:0;
+}
+
+.price-card.featured .feature-list li{
+  color:rgba(255,255,255,0.8);
+}
+
+.price-card.featured .feature-list li::before{
+  color:#60A5FA;
+}
+
+.price-card .btn-outline,
+.price-card .common-btn{
+  width:100%;
+  text-align:center;
+}
+
+.btn-outline{
+  background:transparent;
+ border:1px solid #2563EB;
+  color:#2563EB;
+  padding:11px 22px;
+  border-radius:8px;
+  font-weight:600;
+  font-size:14.5px;
+  cursor:pointer;
+  transition:background .15s ease;
+}
+
+.btn-outline:hover{
+  background:rgba(37,99,235,0.06);
+}
+.btn-outline-dark{
+  background:transparent;
+  border:1px solid #0D1B2A;
+  color:#0D1B2A;
+  border-radius:8px;
+  padding:11px 22px;
+  font-weight:600;
+  font-size:14.5px;
+  cursor:pointer;
+  transition:background .15s ease;
+}
+
+.btn-outline-dark:hover{
+  background:rgba(13,27,42,0.06);
+}
+
+/* secure section spot end */
